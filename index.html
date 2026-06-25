@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Plieno Meistrai — metalo dirbiniai pagal užsakymą</title>
+<meta name="description" content="Tvoros, turėklai, vartai, laiptai ir metalo konstrukcijos pagal individualų užsakymą. Suvirinimas, dažymas, montavimas. Nemokama konsultacija ir pasiūlymas per 24 val.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Plieno Meistrai — metalo dirbiniai pagal užsakymą">
+<meta property="og:description" content="Tvoros, turėklai, vartai, laiptai ir metalo konstrukcijos. Pasiūlymas per 24 val.">
+<meta property="og:url" content="https://plieno-meistrai.lt">
+<meta property="og:image" content="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&h=630&fit=crop&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2312100E'/><text x='50' y='70' font-size='64' font-family='Oswald,sans-serif' font-weight='700' fill='%23C8A24B' text-anchor='middle'>P</text></svg>">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Plieno Meistrai",
+  "description": "Metalo dirbiniai pagal užsakymą: tvoros, turėklai, vartai, laiptai, metalo konstrukcijos.",
+  "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&q=80",
+  "telephone": "+370 600 00000",
+  "email": "info@plieno-meistrai.lt",
+  "url": "https://plieno-meistrai.lt",
+  "areaServed": "Lietuva",
+  "priceRange": "€€",
+  "address": {"@type": "PostalAddress", "addressLocality": "Vilnius", "addressCountry": "LT"},
+  "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00"}],
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Metalinės tvoros"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Turėklai ir laiptai"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kiemo ir garažo vartai"}}
+  ]
+}
+</script>
+<style>
+:root{
+  --dk:#12100E; --dk2:#1C1813; --dk3:#262019;
+  --cream:#F7F3EC; --cream2:#EDE6DA;
+  --ink:#1A1714; --muted:#6F665B; --muted2:#8A8073;
+  --gold:#C8A24B; --gold-l:#D9BC74; --gold-d:#A8842F;
+  --line:rgba(200,162,75,0.18); --line2:rgba(26,23,20,0.10);
+  --steel:#3A3530;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;font-size:17px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.osw{font-family:'Oswald',sans-serif;font-weight:600;line-height:1.08;letter-spacing:-0.01em}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:0.22em;font-size:13px;font-weight:500;color:var(--gold-d)}
+section{padding:clamp(72px,9vw,128px) 0}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;font-size:15px;padding:16px 32px;border-radius:2px;cursor:pointer;border:none;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.btn-gold{background:var(--gold);color:var(--dk)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(200,162,75,0.35)}
+.btn-ghost{background:transparent;color:var(--cream);border:1px solid rgba(247,243,236,0.35)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.btn-dark{background:var(--ink);color:var(--cream)}
+.btn-dark:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(26,23,20,0.25)}
+
+/* Header */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:18px 0;transition:background .35s,padding .35s,box-shadow .35s}
+.site-header.scrolled{background:rgba(18,16,14,0.92);backdrop-filter:blur(12px);padding:12px 0;box-shadow:0 1px 0 var(--line)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px;font-family:'Oswald',sans-serif;font-weight:700;font-size:22px;letter-spacing:0.02em;color:var(--cream);text-transform:uppercase}
+.brand-mark{width:38px;height:38px;border:2px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-size:20px;font-weight:700}
+.brand small{display:block;font-family:'Inter';font-weight:500;font-size:10px;letter-spacing:0.18em;color:var(--gold-l);text-transform:uppercase;margin-top:-2px}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{color:rgba(247,243,236,0.82);font-size:14px;font-weight:500;transition:color .2s}
+.nav a:hover{color:var(--gold)}
+.hdr-phone{display:flex;align-items:center;gap:9px;font-family:'Oswald',sans-serif;font-weight:600;color:var(--cream);font-size:17px}
+.hdr-phone svg{stroke:var(--gold)}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px}
+.burger span{width:26px;height:2px;background:var(--cream);transition:.3s}
+
+/* Hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;background:var(--dk);overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1900&q=80') center/cover;animation:heroZoom 22s ease-out forwards}
+@keyframes heroZoom{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(105deg,rgba(12,10,8,0.93) 0%,rgba(12,10,8,0.78) 42%,rgba(12,10,8,0.45) 100%)}
+.hero-grain{position:absolute;inset:0;opacity:0.05;pointer-events:none}
+.hero-in{position:relative;z-index:3;padding:140px 0 90px;max-width:760px}
+.hero h1{color:var(--cream);font-size:clamp(2.6rem,6vw,5rem);font-weight:700;margin:22px 0 24px}
+.hero h1 .g{color:var(--gold)}
+.hero p.lead{color:rgba(247,243,236,0.85);font-size:clamp(1.05rem,2vw,1.32rem);max-width:560px;margin-bottom:36px}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap}
+.hero-trust{display:flex;gap:34px;margin-top:46px;flex-wrap:wrap}
+.hero-trust div{color:var(--cream)}
+.hero-trust b{font-family:'Oswald';font-size:34px;font-weight:700;color:var(--gold);display:block;line-height:1}
+.hero-trust span{font-size:13px;color:rgba(247,243,236,0.6);text-transform:uppercase;letter-spacing:0.08em}
+.line-w{overflow:hidden;display:block}
+.line-in{display:block;transform:translateY(110%);animation:lineReveal .9s cubic-bezier(0.16,1,0.3,1) forwards}
+@keyframes lineReveal{to{transform:translateY(0)}}
+.fade-d{opacity:0;animation:fadeD .9s ease forwards}
+@keyframes fadeD{to{opacity:1}}
+.d2{animation-delay:.5s}.d3{animation-delay:.75s}.d4{animation-delay:1s}.d5{animation-delay:1.25s}
+.hero-scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px}
+.hero-scroll span{width:1px;height:42px;background:linear-gradient(to bottom,transparent,var(--gold));animation:scrollP 2s ease-in-out infinite}
+@keyframes scrollP{0%,100%{opacity:.3;transform:scaleY(.7)}50%{opacity:1;transform:scaleY(1)}}
+
+/* Marquee */
+.marquee{background:var(--gold);color:var(--dk);padding:15px 0;overflow:hidden;white-space:nowrap}
+.marquee-t{display:inline-block;animation:scrollX 32s linear infinite;font-family:'Oswald';font-weight:600;text-transform:uppercase;letter-spacing:0.05em;font-size:15px}
+.marquee-t span{margin:0 26px}
+.marquee-t span::after{content:'✦';margin-left:52px;color:rgba(18,16,14,0.4)}
+@keyframes scrollX{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* Reveal */
+.rv{opacity:0.01;transform:translateY(26px);filter:blur(4px);transition:opacity .9s ease,transform .9s ease,filter .9s ease}
+.rv.v{opacity:1;transform:none;filter:none}
+.img-rv{clip-path:inset(0 100% 0 0);transition:clip-path 1.2s cubic-bezier(0.77,0,0.175,1)}
+.img-rv.v{clip-path:inset(0 0 0 0)}
+
+/* About */
+.about{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+.about h2{font-size:clamp(2rem,4vw,3.1rem);margin:16px 0 22px}
+.about p{color:var(--muted);margin-bottom:18px;max-width:60ch}
+.about-feats{display:flex;flex-direction:column;gap:18px;margin-top:30px}
+.feat{display:flex;gap:16px;align-items:flex-start}
+.feat-ic{flex:0 0 46px;height:46px;border:1px solid var(--line);display:grid;place-items:center;color:var(--gold-d);border-radius:2px}
+.feat b{font-family:'Oswald';font-weight:600;font-size:18px;display:block}
+.feat small{color:var(--muted);font-size:14.5px}
+.about-img-wrap{position:relative}
+.about-img-wrap img{border-radius:3px;height:540px;object-fit:cover;width:100%}
+.about-badge{position:absolute;bottom:-26px;left:-26px;background:var(--dk);color:var(--cream);padding:26px 30px;border-radius:3px;border-left:3px solid var(--gold)}
+.about-badge b{font-family:'Oswald';font-size:44px;color:var(--gold);line-height:1}
+.about-badge span{font-size:13px;text-transform:uppercase;letter-spacing:0.1em;color:rgba(247,243,236,0.7)}
+
+/* Services */
+.services{background:var(--dk);color:var(--cream)}
+.sec-head{max-width:640px;margin-bottom:56px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.services h2,.dark-h2{font-size:clamp(2rem,4vw,3.1rem);color:var(--cream);margin:14px 0 16px}
+.sec-head p{color:rgba(247,243,236,0.6)}
+.srv-row{display:grid;grid-template-columns:1fr 1.15fr;gap:0;align-items:stretch;border-top:1px solid rgba(247,243,236,0.1)}
+.srv-row:last-child{border-bottom:1px solid rgba(247,243,236,0.1)}
+.srv-row:nth-child(even){grid-template-columns:1.15fr 1fr}
+.srv-row:nth-child(even) .srv-img{order:-1}
+.srv-txt{padding:46px 48px 46px 0;display:flex;flex-direction:column;justify-content:center}
+.srv-row:nth-child(even) .srv-txt{padding:46px 0 46px 48px}
+.srv-num{font-family:'Oswald';font-size:15px;color:var(--gold);letter-spacing:0.1em;margin-bottom:14px}
+.srv-txt h3{font-size:1.85rem;color:var(--cream);margin-bottom:14px}
+.srv-txt p{color:rgba(247,243,236,0.62);font-size:15.5px;margin-bottom:18px;max-width:46ch}
+.srv-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.srv-tags span{font-size:12.5px;border:1px solid rgba(247,243,236,0.18);padding:5px 12px;border-radius:2px;color:rgba(247,243,236,0.8);font-family:'Oswald';letter-spacing:0.04em}
+.srv-price{font-family:'Oswald';color:var(--gold-l);font-size:16px;font-weight:500}
+.srv-img{overflow:hidden;min-height:300px}
+.srv-img img{width:100%;height:100%;object-fit:cover;transition:transform 7s cubic-bezier(0.25,0.46,0.45,0.94)}
+.srv-row:hover .srv-img img{transform:scale(1.07)}
+
+/* Gallery */
+.gallery{background:var(--cream2)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px;margin-top:46px}
+.gal-grid figure{overflow:hidden;border-radius:3px;cursor:pointer;position:relative}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.gal-grid figure:hover img{transform:scale(1.06)}
+.gal-grid figure::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(18,16,14,0.5));opacity:0;transition:.3s}
+.gal-grid figure:hover::after{opacity:1}
+.gal-cap{position:absolute;bottom:14px;left:16px;color:#fff;font-family:'Oswald';font-size:15px;z-index:2;opacity:0;transform:translateY(8px);transition:.3s}
+.gal-grid figure:hover .gal-cap{opacity:1;transform:none}
+.g-tall{grid-row:span 2}.g-wide{grid-column:span 2}
+
+/* Process */
+.process{background:var(--cream)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:54px;counter-reset:s}
+.step{padding:0 28px;position:relative}
+.step:not(:last-child)::after{content:'';position:absolute;top:26px;right:0;width:1px;height:calc(100% - 40px);background:var(--line2)}
+.step-n{width:54px;height:54px;border:1px solid var(--gold);color:var(--gold-d);border-radius:50%;display:grid;place-items:center;font-family:'Oswald';font-size:22px;font-weight:600;margin-bottom:22px}
+.step h3{font-size:1.3rem;margin-bottom:10px}
+.step p{color:var(--muted);font-size:15px}
+
+/* Stats */
+.stats{background:var(--dk);color:var(--cream);position:relative;overflow:hidden}
+.stats-grain{position:absolute;inset:0;opacity:0.05}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;position:relative;z-index:2}
+.stat{text-align:center}
+.stat b{font-family:'Oswald';font-size:clamp(2.6rem,5vw,4rem);font-weight:700;color:var(--gold);display:block;line-height:1}
+.stat span{font-size:14px;text-transform:uppercase;letter-spacing:0.1em;color:rgba(247,243,236,0.65);margin-top:8px;display:block}
+
+/* Testimonials */
+.testi{background:var(--cream)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.tcard{background:#fff;border:1px solid var(--line2);border-radius:4px;padding:32px 30px;display:flex;flex-direction:column}
+.tstars{color:var(--gold);font-size:16px;letter-spacing:2px;margin-bottom:16px}
+.tcard p{font-size:16px;color:var(--ink);margin-bottom:22px;flex:1}
+.tperson{display:flex;align-items:center;gap:13px}
+.tav{width:46px;height:46px;border-radius:50%;background:var(--dk);color:var(--gold);display:grid;place-items:center;font-family:'Oswald';font-weight:600;font-size:18px}
+.tperson b{font-family:'Oswald';font-size:16px;display:block}
+.tperson small{color:var(--muted);font-size:13px}
+
+/* Pricing */
+.pricing{background:var(--cream2)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.pcard{background:#fff;border:1px solid var(--line2);border-radius:4px;padding:38px 32px;position:relative}
+.pcard.feat{background:var(--dk);color:var(--cream);border:none}
+.pcard h3{font-size:1.4rem;margin-bottom:6px}
+.pcard.feat h3{color:var(--cream)}
+.pcard .from{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em}
+.pcard.feat .from{color:rgba(247,243,236,0.6)}
+.pprice{font-family:'Oswald';font-size:2.6rem;font-weight:700;margin:6px 0 4px;color:var(--ink)}
+.pcard.feat .pprice{color:var(--gold)}
+.pprice small{font-size:1rem;font-weight:400;color:var(--muted)}
+.pcard ul{list-style:none;margin:22px 0 26px;display:flex;flex-direction:column;gap:11px}
+.pcard li{font-size:14.5px;display:flex;gap:10px;align-items:flex-start;color:var(--muted)}
+.pcard.feat li{color:rgba(247,243,236,0.82)}
+.pcard li::before{content:'✓';color:var(--gold);font-weight:700;flex:0 0 auto}
+.pbadge{position:absolute;top:-12px;right:24px;background:var(--gold);color:var(--dk);font-family:'Oswald';font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;padding:5px 14px;border-radius:2px}
+.pcard .btn{width:100%;justify-content:center}
+.price-note{text-align:center;color:var(--muted);font-size:14px;margin-top:26px}
+
+/* FAQ */
+.faq{background:var(--cream)}
+.faq-wrap{max-width:820px;margin:46px auto 0}
+.faq-item{border-bottom:1px solid var(--line2)}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:24px 0;font-family:'Oswald';font-size:1.18rem;font-weight:500;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;color:var(--ink)}
+.faq-q .ic{flex:0 0 auto;color:var(--gold-d);font-size:24px;transition:transform .3s}
+.faq-item.open .faq-q .ic{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-a p{padding:0 0 24px;color:var(--muted);max-width:64ch}
+
+/* CTA band */
+.cta-band{background:var(--gold);color:var(--dk);text-align:center}
+.cta-band h2{font-size:clamp(1.9rem,4vw,3rem);margin-bottom:14px;color:var(--dk)}
+.cta-band p{font-size:1.1rem;margin-bottom:30px;color:rgba(18,16,14,0.75);max-width:560px;margin-left:auto;margin-right:auto}
+
+/* Contact */
+.contact{background:var(--dk);color:var(--cream)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px}
+.contact h2{color:var(--cream)}
+.contact-info{margin-top:30px;display:flex;flex-direction:column;gap:22px}
+.ci-row{display:flex;gap:16px;align-items:flex-start}
+.ci-ic{flex:0 0 44px;height:44px;border:1px solid var(--line);display:grid;place-items:center;color:var(--gold);border-radius:2px}
+.ci-row b{font-family:'Oswald';font-size:13px;text-transform:uppercase;letter-spacing:0.1em;color:rgba(247,243,236,0.6);display:block}
+.ci-row span{font-size:17px}
+.cform{background:var(--dk2);padding:38px 36px;border-radius:4px;border:1px solid rgba(247,243,236,0.08)}
+.cform h3{color:var(--cream);font-size:1.5rem;margin-bottom:6px}
+.cform>p{color:rgba(247,243,236,0.55);font-size:14.5px;margin-bottom:24px}
+.field{margin-bottom:18px}
+.field label{font-family:'Oswald';font-size:12.5px;text-transform:uppercase;letter-spacing:0.1em;color:rgba(247,243,236,0.7);display:block;margin-bottom:7px}
+.field input,.field select,.field textarea{width:100%;background:var(--dk3);border:1px solid rgba(247,243,236,0.12);border-radius:2px;padding:13px 15px;color:var(--cream);font-family:'Inter';font-size:15px;transition:border .2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold)}
+.field textarea{resize:vertical;min-height:90px}
+.hp{position:absolute;left:-9999px}
+.cform .btn{width:100%;justify-content:center}
+.form-ok{display:none;text-align:center;padding:30px 10px}
+.form-ok.show{display:block}
+.form-ok .ck{width:64px;height:64px;border-radius:50%;background:var(--gold);color:var(--dk);display:grid;place-items:center;font-size:32px;margin:0 auto 18px}
+.form-ok h3{color:var(--cream)}
+.form-ok p{color:rgba(247,243,236,0.6)}
+
+/* Footer */
+.footer{background:#0C0A08;color:rgba(247,243,236,0.6);padding:70px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.footer .brand{margin-bottom:18px}
+.foot-about{font-size:14.5px;max-width:32ch;line-height:1.7}
+.foot-col h4{font-family:'Oswald';color:var(--cream);font-size:14px;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:18px;font-weight:500}
+.foot-col a,.foot-col p{display:block;font-size:14.5px;margin-bottom:11px;transition:color .2s}
+.foot-col a:hover{color:var(--gold)}
+.foot-bot{border-top:1px solid rgba(247,243,236,0.1);padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px}
+.foot-bot a:hover{color:var(--gold)}
+.demo-tag{display:inline-block;background:rgba(200,162,75,0.15);color:var(--gold-l);border:1px solid var(--line);font-size:12px;padding:3px 10px;border-radius:2px;margin-top:8px;font-family:'Oswald';letter-spacing:0.05em}
+
+/* Mobile sticky bar */
+.mbar{position:fixed;bottom:0;left:0;right:0;z-index:999;display:none;grid-template-columns:1fr 1fr;background:var(--dk);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+.mbar a{padding:15px;text-align:center;font-family:'Oswald';font-weight:600;text-transform:uppercase;letter-spacing:0.04em;font-size:14px;display:flex;align-items:center;justify-content:center;gap:8px}
+.mbar a:first-child{color:var(--gold);border-right:1px solid var(--line)}
+.mbar a:last-child{color:var(--cream)}
+
+/* Cookie */
+.cookie{position:fixed;bottom:18px;left:18px;right:18px;max-width:460px;background:var(--dk);color:var(--cream);padding:22px 24px;border-radius:4px;border:1px solid var(--line);z-index:1100;box-shadow:0 20px 50px rgba(0,0,0,0.4);display:none}
+.cookie.show{display:block}
+.cookie p{font-size:13.5px;color:rgba(247,243,236,0.75);margin-bottom:14px}
+.cookie p a{color:var(--gold);text-decoration:underline}
+.cookie-btns{display:flex;gap:10px}
+.cookie .btn{padding:10px 20px;font-size:13px}
+
+/* Spotlight */
+.spotlight{position:fixed;inset:0;pointer-events:none;z-index:1;background:radial-gradient(circle 480px at var(--mx,50%) var(--my,50%),rgba(200,162,75,0.03),transparent 100%)}
+
+@media(max-width:980px){
+  .nav,.hdr-phone{display:none}
+  .burger{display:flex}
+  .nav.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--dk);padding:20px 24px;gap:18px}
+  .about-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+  .about-img-wrap img{height:400px}
+  .srv-row,.srv-row:nth-child(even){grid-template-columns:1fr}
+  .srv-row:nth-child(even) .srv-img{order:0}
+  .srv-txt,.srv-row:nth-child(even) .srv-txt{padding:34px 0}
+  .gal-grid{grid-template-columns:repeat(2,1fr)}
+  .steps,.stats-grid,.testi-grid,.price-grid{grid-template-columns:1fr 1fr}
+  .step:not(:last-child)::after{display:none}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .mbar{display:grid}
+  body{padding-bottom:54px}
+}
+@media(max-width:600px){
+  .hero-trust{gap:24px}
+  .gal-grid{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+  .g-wide{grid-column:span 2}
+  .steps,.stats-grid,.testi-grid,.price-grid,.foot-grid{grid-template-columns:1fr}
+  .about-badge{left:0}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none;filter:none}
+  .img-rv{clip-path:none}
+  .line-in{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="spotlight"></div>
+
+<!-- Header -->
+<header class="site-header" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="#" class="brand"><span class="brand-mark">P</span><span><span data-cms="business.name">Plieno Meistrai</span><small data-cms="business.tagline">Metalo dirbiniai</small></span></a>
+    <nav class="nav" id="nav">
+      <a href="#apie">Apie mus</a>
+      <a href="#paslaugos">Paslaugos</a>
+      <a href="#darbai">Darbai</a>
+      <a href="#kainos">Kainos</a>
+      <a href="#duk">D.U.K.</a>
+      <a href="#kontaktai">Kontaktai</a>
+    </nav>
+    <a href="tel:+37060000000" class="hdr-phone" data-cms-tel="business.phone">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span data-cms="business.phone">+370 600 00000</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Meniu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ov"></div>
+  <svg class="hero-grain"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
+  <div class="wrap hero-in">
+    <span class="eyebrow fade-d" style="color:var(--gold-l)" data-cms="hero.eyebrow">Suvirinimas · Tvoros · Turėklai · Vartai</span>
+    <h1>
+      <span class="line-w"><span class="line-in" style="animation-delay:.15s" data-cms="hero.title1">Metalo dirbiniai,</span></span>
+      <span class="line-w"><span class="line-in" style="animation-delay:.32s" data-cms="hero.title2">kurie tarnauja</span></span>
+      <span class="line-w"><span class="line-in g" style="animation-delay:.49s" data-cms="hero.title3">dešimtmečius.</span></span>
+    </h1>
+    <p class="lead fade-d d3" data-cms="hero.lead">Projektuojame, gaminame ir montuojame metalines tvoras, turėklus, vartus ir laiptus pagal individualų užsakymą. Tikslus darbas, tvirtos jungtys, ilgaamžis dažymas.</p>
+    <div class="hero-cta fade-d d4">
+      <a href="#kontaktai" class="btn btn-gold">Gauti pasiūlymą per 24 val.</a>
+      <a href="#darbai" class="btn btn-ghost">Žiūrėti darbus</a>
+    </div>
+    <div class="hero-trust fade-d d5">
+      <div><b data-cms="hero.stat1num">12+</b><span data-cms="hero.stat1label">metų patirties</span></div>
+      <div><b data-cms="hero.stat2num">480+</b><span data-cms="hero.stat2label">įgyvendintų projektų</span></div>
+      <div><b data-cms="hero.stat3num">5 m.</b><span data-cms="hero.stat3label">garantija dažymui</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll"><span></span></div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee">
+  <div class="marquee-t">
+    <span>Metalinės tvoros</span><span>Laiptų turėklai</span><span>Kiemo vartai</span><span>Garažo vartai</span><span>Vidaus laiptai</span><span>Stoginės</span><span>Miltelinis dažymas</span><span>Metalo konstrukcijos</span>
+    <span>Metalinės tvoros</span><span>Laiptų turėklai</span><span>Kiemo vartai</span><span>Garažo vartai</span><span>Vidaus laiptai</span><span>Stoginės</span><span>Miltelinis dažymas</span><span>Metalo konstrukcijos</span>
+  </div>
+</div>
+
+<!-- About -->
+<section class="about" id="apie">
+  <div class="wrap about-grid">
+    <div class="rv">
+      <span class="eyebrow">Apie mus</span>
+      <h2 data-cms="about.heading">Dirbtuvė, kurioje metalą pažįsta iš arti</h2>
+      <p data-cms="about.p1">Esame nedidelė, bet patyrusi metalo dirbtuvė. Kiekvieną gaminį braižome, suvirintojas pjauna ir verda savo rankomis, o sumontuotą darbą perduodame tik tada, kai patys juo pasitikėtume.</p>
+      <p data-cms="about.p2">Nesivaikome kiekio — vaikomės tvirtumo. Naudojame sertifikuotą metalą, kokybiškas jungtis ir miltelinį dažymą, kuris nesilupa po pirmos žiemos.</p>
+      <div class="about-feats">
+        <div class="feat">
+          <div class="feat-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <div><b>Pilnas ciklas vienoje vietoje</b><small>Projektas, gamyba, dažymas ir montavimas — be tarpininkų.</small></div>
+        </div>
+        <div class="feat">
+          <div class="feat-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <div><b>Tikslus matavimas vietoje</b><small>Atvažiuojame, išmatuojame ir suprojektuojame pagal jūsų erdvę.</small></div>
+        </div>
+        <div class="feat">
+          <div class="feat-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div><b>Garantija raštu</b><small>Konstrukcijoms ir dažymui suteikiame iki 5 metų garantiją.</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="about-img-wrap rv">
+      <img class="img-rv" src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=900&q=80" alt="Suvirintojas dirbtuvėje" loading="lazy">
+      <div class="about-badge"><b>480+</b><span>projektų visoje Lietuvoje</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="services" id="paslaugos">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Ką gaminame</span>
+      <h2>Paslaugos pagal individualų užsakymą</h2>
+      <p>Nuo vieno turėklo iki viso kiemo aptvėrimo — kiekvienas gaminys projektuojamas atskirai pagal jūsų matmenis ir stilių.</p>
+    </div>
+
+    <div class="srv-row rv">
+      <div class="srv-txt">
+        <div class="srv-num">01 / Tvoros</div>
+        <h3>Metalinės tvoros ir aptvarai</h3>
+        <p>Klasikinės, segmentinės ar kalviškos tvoros su tvirtais stulpais ir tiksliomis jungtimis. Atspari korozijai ir laiko patikrinta.</p>
+        <div class="srv-tags"><span>Segmentinės</span><span>Kalviškos</span><span>Pramoninės</span></div>
+        <div class="srv-price">Nuo 55 €/m.</div>
+      </div>
+      <div class="srv-img"><img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=900&q=80" alt="Metalinė tvora" loading="lazy"></div>
+    </div>
+
+    <div class="srv-row rv">
+      <div class="srv-txt">
+        <div class="srv-num">02 / Turėklai</div>
+        <h3>Laiptų ir balkonų turėklai</h3>
+        <p>Vidaus ir lauko turėklai — minimalistiniai arba dekoratyvūs. Saugios jungtys, tvirta laikysena, švarus suvirinimas be matomų siūlių.</p>
+        <div class="srv-tags"><span>Nerūdijantis plienas</span><span>Su stiklu</span><span>Kalviški</span></div>
+        <div class="srv-price">Nuo 70 €/m.</div>
+      </div>
+      <div class="srv-img"><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=900&q=80" alt="Laiptų turėklai" loading="lazy"></div>
+    </div>
+
+    <div class="srv-row rv">
+      <div class="srv-txt">
+        <div class="srv-num">03 / Vartai</div>
+        <h3>Kiemo ir garažo vartai</h3>
+        <p>Stumdomi, varstomi ar automatiniai vartai su patikima automatika. Suderiname su jūsų tvora į vientisą, tvarkingą visumą.</p>
+        <div class="srv-tags"><span>Stumdomi</span><span>Varstomi</span><span>Su automatika</span></div>
+        <div class="srv-price">Nuo 690 € / vnt.</div>
+      </div>
+      <div class="srv-img"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=900&q=80" alt="Kiemo vartai" loading="lazy"></div>
+    </div>
+
+    <div class="srv-row rv">
+      <div class="srv-txt">
+        <div class="srv-num">04 / Konstrukcijos</div>
+        <h3>Laiptai, stoginės ir konstrukcijos</h3>
+        <p>Lauko ir vidaus laiptai, automobilių stoginės, navai ir individualios metalo konstrukcijos. Skaičiuojame apkrovas, ne spėjame.</p>
+        <div class="srv-tags"><span>Laiptai</span><span>Stoginės</span><span>Karkasai</span></div>
+        <div class="srv-price">Kaina pagal projektą</div>
+      </div>
+      <div class="srv-img"><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=900&q=80" alt="Metalo konstrukcijos" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="gallery" id="darbai">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Darbai</span>
+      <h2 style="color:var(--ink)">Keletas mūsų įgyvendintų projektų</h2>
+      <p style="color:var(--muted)">Geriausiai už mus kalba pats metalas. <em>(Demo galerija — čia įdedamos tikros jūsų darbų nuotraukos.)</em></p>
+    </div>
+    <div class="gal-grid" id="galGrid">
+      <figure class="g-tall rv"><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80" alt="Metalo darbas" loading="lazy"><figcaption class="gal-cap">Kiemo tvora · Vilnius</figcaption></figure>
+      <figure class="g-wide rv"><img src="https://images.unsplash.com/photo-1486718448742-163732cd1544?w=900&q=80" alt="Konstrukcija" loading="lazy"><figcaption class="gal-cap">Laiptų turėklai · Kaunas</figcaption></figure>
+      <figure class="rv"><img src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=700&q=80" alt="Suvirinimas" loading="lazy"><figcaption class="gal-cap">Suvirinimo darbai</figcaption></figure>
+      <figure class="rv"><img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?w=700&q=80" alt="Metalo gaminys" loading="lazy"><figcaption class="gal-cap">Vartų rėmas</figcaption></figure>
+      <figure class="g-wide rv"><img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=900&q=80" alt="Tvora" loading="lazy"><figcaption class="gal-cap">Segmentinė tvora · Trakai</figcaption></figure>
+      <figure class="rv"><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=700&q=80" alt="Turėklai" loading="lazy"><figcaption class="gal-cap">Balkono turėklai</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="process">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow">Kaip dirbame</span>
+      <h2 style="color:var(--ink)">Nuo skambučio iki sumontuoto darbo</h2>
+      <p style="color:var(--muted)">Aiškus procesas be netikėtumų ir paslėptų kainų.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="step-n">1</div><h3>Konsultacija</h3><p>Paskambinate arba paliekate užklausą. Aptariame poreikį ir biudžetą, atsakome į klausimus.</p></div>
+      <div class="step rv"><div class="step-n">2</div><h3>Matavimas ir projektas</h3><p>Atvažiuojame, tiksliai išmatuojame ir paruošiame brėžinį su galutine kaina raštu.</p></div>
+      <div class="step rv"><div class="step-n">3</div><h3>Gamyba ir dažymas</h3><p>Pjauname, verdame ir dažome savo dirbtuvėje. Informuojame apie eigą.</p></div>
+      <div class="step rv"><div class="step-n">4</div><h3>Montavimas</h3><p>Atvežame ir tvirtai sumontuojame vietoje. Sutvarkome po savęs ir perduodame garantiją.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+  <svg class="stats-grain"><filter id="n2"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3"/></filter><rect width="100%" height="100%" filter="url(#n2)"/></svg>
+  <div class="wrap stats-grid">
+    <div class="stat rv"><b><span class="counter" data-target="480">0</span>+</b><span>Įgyvendintų projektų</span></div>
+    <div class="stat rv"><b><span class="counter" data-target="12">0</span></b><span>Metų patirties</span></div>
+    <div class="stat rv"><b><span class="counter" data-target="98">0</span>%</b><span>Patenkintų klientų</span></div>
+    <div class="stat rv"><b><span class="counter" data-target="24">0</span> val.</b><span>Iki pasiūlymo</span></div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testi">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow">Atsiliepimai</span>
+      <h2 style="color:var(--ink)">Ką sako klientai</h2>
+      <p style="color:var(--muted)"><em>Demo atsiliepimai — pakeičiami tikrais jūsų klientų atsiliepimais.</em></p>
+    </div>
+    <div class="testi-grid">
+      <div class="tcard rv"><div class="tstars">★★★★★</div><p>„Tvorą sumontavo greitai ir labai tvarkingai. Suvirinimo siūlės — kaip iš katalogo. Rekomenduoju visiems kaimynams.“</p><div class="tperson"><div class="tav">RK</div><div><b>[Kliento vardas]</b><small>Kiemo tvora, Vilnius</small></div></div></div>
+      <div class="tcard rv"><div class="tstars">★★★★★</div><p>„Užsakiau vidaus laiptų turėklus. Atvažiavo, išmatavo, viską suderino. Galutinė kaina nesiskyrė nuo pasiūlymo nė centu.“</p><div class="tperson"><div class="tav">AG</div><div><b>[Kliento vardas]</b><small>Laiptų turėklai, Kaunas</small></div></div></div>
+      <div class="tcard rv"><div class="tstars">★★★★★</div><p>„Stumdomi vartai su automatika veikia jau trečią žiemą be priekaištų. Profesionalus požiūris nuo pradžios iki galo.“</p><div class="tperson"><div class="tav">MJ</div><div><b>[Kliento vardas]</b><small>Kiemo vartai, Trakai</small></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="pricing" id="kainos">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow">Kainų gairės</span>
+      <h2 style="color:var(--ink)">Skaidrios kainos be staigmenų</h2>
+      <p style="color:var(--muted)">Orientacinės kainos. Tiksli kaina paaiškėja po nemokamo matavimo vietoje.</p>
+    </div>
+    <div class="price-grid">
+      <div class="pcard rv">
+        <h3>Turėklai</h3>
+        <span class="from">Nuo</span>
+        <div class="pprice">70 €<small>/ metrui</small></div>
+        <ul>
+          <li>Vidaus ir lauko turėklai</li>
+          <li>Plienas arba nerūdijantis plienas</li>
+          <li>Miltelinis dažymas pasirinktinai</li>
+          <li>Montavimas vietoje</li>
+        </ul>
+        <a href="#kontaktai" class="btn btn-dark">Užklausti kainos</a>
+      </div>
+      <div class="pcard feat rv">
+        <span class="pbadge">Populiariausia</span>
+        <h3>Tvora „po raktu“</h3>
+        <span class="from">Nuo</span>
+        <div class="pprice">55 €<small>/ metrui</small></div>
+        <ul>
+          <li>Projektas ir matavimas — nemokamai</li>
+          <li>Gamyba iš sertifikuoto metalo</li>
+          <li>Stulpų betonavimas</li>
+          <li>Miltelinis dažymas (RAL pasirinkimas)</li>
+          <li>Pilnas montavimas + garantija</li>
+        </ul>
+        <a href="#kontaktai" class="btn btn-gold">Gauti pasiūlymą</a>
+      </div>
+      <div class="pcard rv">
+        <h3>Vartai ir konstrukcijos</h3>
+        <span class="from">Nuo</span>
+        <div class="pprice">690 €<small>/ vnt.</small></div>
+        <ul>
+          <li>Kiemo ir garažo vartai</li>
+          <li>Automatika pagal poreikį</li>
+          <li>Laiptai, stoginės, karkasai</li>
+          <li>Individualus projektavimas</li>
+        </ul>
+        <a href="#kontaktai" class="btn btn-dark">Aptarti projektą</a>
+      </div>
+    </div>
+    <p class="price-note">Visi darbai pradedami tik patvirtinus galutinę kainą raštu. Jokių staigmenų sąskaitoje.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="duk">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow">D.U.K.</span>
+      <h2 style="color:var(--ink)">Dažniausiai užduodami klausimai</h2>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq-item rv"><button class="faq-q">Per kiek laiko pagaminate užsakymą?<span class="ic">+</span></button><div class="faq-a"><p>Priklauso nuo darbo apimties. Turėklus ar nedidelę tvorą paprastai pagaminame ir sumontuojame per 1–2 savaites nuo projekto patvirtinimo. Didesnėms konstrukcijoms terminą nurodome pasiūlyme.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q">Ar matavimas ir konsultacija kainuoja?<span class="ic">+</span></button><div class="faq-a"><p>Ne. Atvažiavimas, matavimas vietoje ir pasiūlymo paruošimas yra nemokami ir jūsų niekuo neįpareigoja.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q">Kokiose vietovėse dirbate?<span class="ic">+</span></button><div class="faq-a"><p>Dirbame visoje Lietuvoje. Vilniaus, Kauno ir aplinkinių rajonų objektus aptarnaujame greičiausiai, dėl tolimesnių — tiesiog susitarkime telefonu.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q">Ar suteikiate garantiją?<span class="ic">+</span></button><div class="faq-a"><p>Taip. Suvirintoms konstrukcijoms ir milteliniam dažymui suteikiame iki 5 metų garantiją raštu. Tvirtumu pasitikime, todėl jį užrašome.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q">Ar galiu pasirinkti spalvą?<span class="ic">+</span></button><div class="faq-a"><p>Žinoma. Naudojame miltelinį dažymą, todėl galite rinktis iš viso RAL spalvų katalogo — nuo klasikinės juodos iki bet kurio jūsų pageidaujamo atspalvio.</p></div></div>
+      <div class="faq-item rv"><button class="faq-q">Kaip vyksta atsiskaitymas?<span class="ic">+</span></button><div class="faq-a"><p>Įprastai dirbame su avansu medžiagoms ir likučiu po darbų atlikimo. Išrašome sąskaitą faktūrą, dirbame ir su privačiais, ir su verslo klientais.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA band -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2 class="rv">Turite idėją? Paverskime ją metalu.</h2>
+    <p class="rv">Aprašykite, ko reikia — atsiųsime nemokamą pasiūlymą per 24 valandas.</p>
+    <a href="#kontaktai" class="btn btn-dark rv">Pradėti dabar</a>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="kontaktai">
+  <div class="wrap contact-grid">
+    <div class="rv">
+      <span class="eyebrow">Kontaktai</span>
+      <h2 class="dark-h2">Susisiekime</h2>
+      <p style="color:rgba(247,243,236,0.6);max-width:42ch">Atsakome į užklausas darbo dienomis per kelias valandas. Paskambinkite arba užpildykite formą — patogu jums.</p>
+      <div class="contact-info">
+        <div class="ci-row"><div class="ci-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><b>Telefonas</b><span data-cms="business.phone">+370 600 00000</span></div></div>
+        <div class="ci-row"><div class="ci-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></div><div><b>El. paštas</b><span data-cms="business.email">info@plieno-meistrai.lt</span></div></div>
+        <div class="ci-row"><div class="ci-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><b>Dirbtuvė</b><span data-cms="business.address">Pramonės g. 00, Vilnius</span></div></div>
+        <div class="ci-row"><div class="ci-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><div><b>Darbo laikas</b><span data-cms="business.hours">I–V 8:00–17:00</span></div></div>
+      </div>
+    </div>
+    <div class="cform rv">
+      <form id="leadForm">
+        <h3>Gaukite nemokamą pasiūlymą</h3>
+        <p>Užpildykite 3 laukelius — susisieksime per 24 val.</p>
+        <input type="text" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+        <div class="field"><label for="vardas">Vardas</label><input type="text" id="vardas" name="vardas" required placeholder="Jūsų vardas"></div>
+        <div class="field"><label for="tel">Telefonas</label><input type="tel" id="tel" name="telefonas" required placeholder="+370 6XX XXXXX"></div>
+        <div class="field"><label for="pasl">Kokio darbo reikia?</label>
+          <select id="pasl" name="paslauga" required>
+            <option value="">Pasirinkite...</option>
+            <option>Tvora</option><option>Turėklai</option><option>Vartai</option><option>Laiptai / konstrukcija</option><option>Kita</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-gold">Gauti mano pasiūlymą</button>
+      </form>
+      <div class="form-ok" id="formOk">
+        <div class="ck">✓</div>
+        <h3>Ačiū! Užklausa gauta.</h3>
+        <p>Susisieksime su jumis artimiausiu metu darbo valandomis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#" class="brand"><span class="brand-mark">P</span><span><span data-cms="business.name">Plieno Meistrai</span><small data-cms="business.tagline">Metalo dirbiniai</small></span></a>
+        <p class="foot-about">Metalo dirbiniai pagal individualų užsakymą: tvoros, turėklai, vartai, laiptai ir konstrukcijos visoje Lietuvoje.</p>
+        <span class="demo-tag">DEMONSTRACINĖ SVETAINĖ</span>
+      </div>
+      <div class="foot-col">
+        <h4>Paslaugos</h4>
+        <a href="#paslaugos">Metalinės tvoros</a>
+        <a href="#paslaugos">Turėklai</a>
+        <a href="#paslaugos">Vartai</a>
+        <a href="#paslaugos">Laiptai ir konstrukcijos</a>
+      </div>
+      <div class="foot-col">
+        <h4>Nuorodos</h4>
+        <a href="#apie">Apie mus</a>
+        <a href="#darbai">Darbai</a>
+        <a href="#kainos">Kainos</a>
+        <a href="#duk">D.U.K.</a>
+      </div>
+      <div class="foot-col">
+        <h4>Kontaktai</h4>
+        <p data-cms="business.phone">+370 600 00000</p>
+        <p data-cms="business.email">info@plieno-meistrai.lt</p>
+        <p data-cms="business.address">Pramonės g. 00, Vilnius</p>
+        <p data-cms="business.hours">I–V 8:00–17:00</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Plieno Meistrai. Visos teisės saugomos.</span>
+      <span><a href="privacy.html">Privatumo politika</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile bar -->
+<div class="mbar">
+  <a href="tel:+37060000000" data-cms-tel="business.phone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Skambinti</a>
+  <a href="#kontaktai">Gauti pasiūlymą</a>
+</div>
+
+<!-- Cookie -->
+<div class="cookie" id="cookie">
+  <p>Ši svetainė naudoja slapukus, kad pagerintų jūsų naršymo patirtį. Daugiau — <a href="privacy.html">privatumo politikoje</a>.</p>
+  <div class="cookie-btns">
+    <button class="btn btn-gold" onclick="okCookie()">Sutinku</button>
+    <button class="btn btn-ghost" onclick="document.getElementById('cookie').classList.remove('show')">Tik būtini</button>
+  </div>
+</div>
+
+<script>
+// Header scroll
+var hdr=document.getElementById('hdr');
+window.addEventListener('scroll',function(){hdr.classList.toggle('scrolled',window.scrollY>40)});
+// Burger
+var burger=document.getElementById('burger'),nav=document.getElementById('nav');
+burger.addEventListener('click',function(){nav.classList.toggle('open')});
+nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open')})});
+// Reveal
+var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('v');obs.unobserve(e.target)}})},{threshold:0.12});
+document.querySelectorAll('.rv,.img-rv').forEach(function(el){obs.observe(el)});
+// Counters
+function animateCount(el){var t=+el.dataset.target,d=1600,s=null;function step(ts){if(!s)s=ts;var p=Math.min((ts-s)/d,1),e=1-Math.pow(1-p,4);el.textContent=Math.round(e*t);if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}
+var cObs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){animateCount(e.target);cObs.unobserve(e.target)}})},{threshold:0.5});
+document.querySelectorAll('.counter').forEach(function(el){cObs.observe(el)});
+// FAQ
+document.querySelectorAll('.faq-item').forEach(function(item){item.querySelector('.faq-q').addEventListener('click',function(){var open=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight=null});if(!open){item.classList.add('open');var a=item.querySelector('.faq-a');a.style.maxHeight=a.scrollHeight+'px'}})});
+// Form
+var form=document.getElementById('leadForm');
+form.addEventListener('submit',function(e){e.preventDefault();if(form.botcheck.value)return;form.style.display='none';document.getElementById('formOk').classList.add('show')});
+// Spotlight
+document.addEventListener('mousemove',function(e){document.documentElement.style.setProperty('--mx',e.clientX+'px');document.documentElement.style.setProperty('--my',e.clientY+'px')});
+// Cookie
+function okCookie(){try{localStorage.setItem('ck','1')}catch(e){}document.getElementById('cookie').classList.remove('show')}
+try{if(!localStorage.getItem('ck'))setTimeout(function(){document.getElementById('cookie').classList.add('show')},1400)}catch(e){}
+// CMS turinio įkrovimas (content.json valdo redaguojamus laukus)
+(function(){
+  var RAW='https://raw.githubusercontent.com/robertassnaidaris/plieno-meistrai/main/content.json';
+  function gp(o,p){return p.split('.').reduce(function(a,k){return a&&a[k]!=null?a[k]:null},o)}
+  fetch(RAW+'?v='+Date.now()).then(function(r){if(!r.ok)throw 0;return r.json()}).catch(function(){
+    return fetch('content.json?v='+Date.now()).then(function(r){return r.json()});
+  }).then(function(c){
+    document.querySelectorAll('[data-cms]').forEach(function(el){
+      var v=gp(c,el.getAttribute('data-cms')); if(v!=null) el.textContent=v;
+    });
+    document.querySelectorAll('[data-cms-tel]').forEach(function(el){
+      var v=gp(c,el.getAttribute('data-cms-tel')); if(v!=null) el.setAttribute('href','tel:'+String(v).replace(/[^0-9+]/g,''));
+    });
+    var g=document.getElementById('galGrid');
+    if(g&&c.gallery&&c.gallery.length){
+      g.innerHTML=c.gallery.map(function(it,i){
+        var cls=(i%5===0)?' g-tall':((i%5===1)?' g-wide':'');
+        var cap=(it.caption||'').replace(/"/g,'&quot;');
+        return '<figure class="rv v'+cls+'"><img src="'+it.img+'" alt="'+cap+'" loading="lazy"><figcaption class="gal-cap">'+cap+'</figcaption></figure>';
+      }).join('');
+    }
+  }).catch(function(){});
+})();
+</script>
+</body>
+</html>

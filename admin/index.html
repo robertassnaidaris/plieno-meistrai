@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Svetainės redagavimas — Plieno Meistrai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--dk:#12100E;--dk2:#1C1813;--dk3:#262019;--cream:#F7F3EC;--gold:#C8A24B;--gold-l:#D9BC74;--muted:#8A8073;--ok:#4CAF7D;--err:#E0625B}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:var(--dk);color:var(--cream);line-height:1.55;font-size:15px;padding-bottom:90px}
+.osw{font-family:'Oswald',sans-serif}
+header{position:sticky;top:0;z-index:50;background:rgba(18,16,14,0.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(200,162,75,0.2);padding:16px 0}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Oswald';font-weight:700;font-size:19px;text-transform:uppercase;letter-spacing:0.02em}
+.logo span{color:var(--gold)}
+.view-link{color:var(--gold-l);font-size:13px;text-decoration:none;font-family:'Oswald';text-transform:uppercase;letter-spacing:0.05em}
+h1{font-family:'Oswald';font-weight:600;font-size:1.7rem;margin:30px 0 6px}
+.sub{color:var(--muted);margin-bottom:26px;font-size:14px}
+.card{background:var(--dk2);border:1px solid rgba(247,243,236,0.08);border-radius:8px;padding:24px;margin-bottom:18px}
+.card h2{font-family:'Oswald';font-weight:600;font-size:1.1rem;color:var(--gold-l);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid rgba(247,243,236,0.08)}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:12.5px;font-family:'Oswald';text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:6px}
+.field input,.field textarea{width:100%;background:var(--dk3);border:1px solid rgba(247,243,236,0.12);border-radius:5px;padding:11px 13px;color:var(--cream);font-family:'Inter';font-size:14.5px;transition:border .2s}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--gold)}
+.field textarea{resize:vertical;min-height:70px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.row3{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px;margin-bottom:16px}
+.gitem{position:relative;border-radius:6px;overflow:hidden;background:var(--dk3);aspect-ratio:4/3}
+.gitem img{width:100%;height:100%;object-fit:cover}
+.gitem .cap{position:absolute;bottom:0;left:0;right:0;background:rgba(18,16,14,0.8);font-size:11px;padding:4px 6px;color:var(--cream)}
+.gitem .del{position:absolute;top:5px;right:5px;width:24px;height:24px;border-radius:50%;background:var(--err);color:#fff;border:none;cursor:pointer;font-size:14px;line-height:1;display:grid;place-items:center}
+.upload{border:2px dashed rgba(200,162,75,0.4);border-radius:6px;padding:22px;text-align:center;cursor:pointer;color:var(--gold-l);font-size:14px;transition:.2s}
+.upload:hover{border-color:var(--gold);background:rgba(200,162,75,0.05)}
+.upload input{display:none}
+.savebar{position:fixed;bottom:0;left:0;right:0;background:rgba(18,16,14,0.97);backdrop-filter:blur(8px);border-top:1px solid rgba(200,162,75,0.25);padding:14px 0;z-index:60}
+.savebar .wrap{display:flex;gap:14px;align-items:center}
+.pw{flex:1;background:var(--dk3);border:1px solid rgba(247,243,236,0.12);border-radius:5px;padding:11px 13px;color:var(--cream);font-size:14.5px}
+.pw:focus{outline:none;border-color:var(--gold)}
+.btn{background:var(--gold);color:var(--dk);border:none;border-radius:5px;padding:12px 26px;font-family:'Oswald';font-weight:600;text-transform:uppercase;letter-spacing:0.04em;font-size:14px;cursor:pointer;white-space:nowrap;transition:.2s}
+.btn:hover{background:var(--gold-l)}
+.btn:disabled{opacity:.5;cursor:wait}
+.msg{padding:12px 16px;border-radius:6px;margin-bottom:16px;font-size:14px;display:none}
+.msg.show{display:block}
+.msg.ok{background:rgba(76,175,125,0.15);color:var(--ok);border:1px solid rgba(76,175,125,0.4)}
+.msg.err{background:rgba(224,98,91,0.15);color:var(--err);border:1px solid rgba(224,98,91,0.4)}
+.hint{font-size:12.5px;color:var(--muted);margin-top:6px}
+@media(max-width:560px){.row2,.row3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="logo">Plieno<span>Meistrai</span> · redagavimas</div>
+  <a href="/" class="view-link" target="_blank">Žiūrėti svetainę ↗</a>
+</div></header>
+
+<div class="wrap">
+  <h1>Svetainės turinio redagavimas</h1>
+  <p class="sub">Pakeiskite tekstą ar nuotraukas, įveskite slaptažodį apačioje ir spauskite „Išsaugoti". Pakeitimai svetainėje matomi maždaug per minutę.</p>
+
+  <div class="msg" id="msg"></div>
+
+  <div class="card">
+    <h2>Įmonės kontaktai</h2>
+    <div class="row2">
+      <div class="field"><label>Pavadinimas</label><input id="business.name"></div>
+      <div class="field"><label>Trumpas aprašymas (po pavadinimu)</label><input id="business.tagline"></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label>Telefonas</label><input id="business.phone"></div>
+      <div class="field"><label>El. paštas</label><input id="business.email"></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label>Adresas</label><input id="business.address"></div>
+      <div class="field"><label>Darbo laikas</label><input id="business.hours"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Pagrindinis ekranas (viršus)</h2>
+    <div class="field"><label>Maža antraštė viršuje</label><input id="hero.eyebrow"></div>
+    <div class="row3">
+      <div class="field"><label>Antraštė, 1 eilutė</label><input id="hero.title1"></div>
+      <div class="field"><label>Antraštė, 2 eilutė</label><input id="hero.title2"></div>
+    </div>
+    <div class="field"><label>Antraštė, 3 eilutė (auksinė)</label><input id="hero.title3"></div>
+    <div class="field"><label>Aprašymas po antrašte</label><textarea id="hero.lead"></textarea></div>
+    <div class="row3">
+      <div class="field"><label>Skaičius 1</label><input id="hero.stat1num"></div>
+      <div class="field"><label>Tekstas 1</label><input id="hero.stat1label"></div>
+      <div class="field"><label>Skaičius 2</label><input id="hero.stat2num"></div>
+      <div class="field"><label>Tekstas 2</label><input id="hero.stat2label"></div>
+      <div class="field"><label>Skaičius 3</label><input id="hero.stat3num"></div>
+      <div class="field"><label>Tekstas 3</label><input id="hero.stat3label"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Apie mus</h2>
+    <div class="field"><label>Antraštė</label><input id="about.heading"></div>
+    <div class="field"><label>1 pastraipa</label><textarea id="about.p1"></textarea></div>
+    <div class="field"><label>2 pastraipa</label><textarea id="about.p2"></textarea></div>
+  </div>
+
+  <div class="card">
+    <h2>Darbų nuotraukos (galerija)</h2>
+    <div class="gal" id="gal"></div>
+    <label class="upload">
+      + Pridėti nuotraukų (galima kelias iš karto)
+      <input type="file" id="fileInput" accept="image/*" multiple>
+    </label>
+    <p class="hint">Nuotraukos automatiškai sumažinamos, kad svetainė liktų greita. Vienu kartu kelkite iki ~8 nuotraukų.</p>
+  </div>
+</div>
+
+<div class="savebar"><div class="wrap">
+  <input type="password" class="pw" id="pw" placeholder="Slaptažodis">
+  <button class="btn" id="saveBtn">Išsaugoti</button>
+</div></div>
+
+<script>
+var OWNER='robertassnaidaris', REPO='plieno-meistrai', BRANCH='main';
+var RAW='https://raw.githubusercontent.com/'+OWNER+'/'+REPO+'/'+BRANCH+'/content.json';
+var data={}, newImages=[];
+var msg=document.getElementById('msg');
+
+function showMsg(t,type){msg.textContent=t;msg.className='msg show '+type;window.scrollTo({top:0,behavior:'smooth'});}
+function gp(o,p){return p.split('.').reduce(function(a,k){return a&&a[k]!=null?a[k]:null},o);}
+function sp(o,p,v){var ks=p.split('.');var last=ks.pop();var t=ks.reduce(function(a,k){a[k]=a[k]||{};return a[k];},o);t[last]=v;}
+
+function fillForm(){
+  document.querySelectorAll('input[id],textarea[id]').forEach(function(el){
+    if(el.id.indexOf('.')<0) return;
+    var v=gp(data,el.id); if(v!=null) el.value=v;
+  });
+  renderGallery();
+}
+function renderGallery(){
+  var g=document.getElementById('gal'); g.innerHTML='';
+  (data.gallery||[]).forEach(function(it,idx){
+    var d=document.createElement('div'); d.className='gitem';
+    d.innerHTML='<img src="'+it.img+'"><div class="cap">'+(it.caption||'')+'</div><button class="del" title="Pašalinti">×</button>';
+    d.querySelector('.del').onclick=function(){ data.gallery.splice(idx,1); renderGallery(); };
+    g.appendChild(d);
+  });
+  newImages.forEach(function(im,idx){
+    var d=document.createElement('div'); d.className='gitem';
+    d.innerHTML='<img src="data:image/jpeg;base64,'+im.data+'"><div class="cap">Nauja</div><button class="del">×</button>';
+    d.querySelector('.del').onclick=function(){ newImages.splice(idx,1); renderGallery(); };
+    g.appendChild(d);
+  });
+}
+
+function resizeImage(file, max, cb){
+  var img=new Image(); var url=URL.createObjectURL(file);
+  img.onload=function(){
+    var w=img.width,h=img.height;
+    if(w>h && w>max){h=Math.round(h*max/w);w=max;}
+    else if(h>w && h>max){w=Math.round(w*max/h);h=max;}
+    else if(w>max){w=max;h=max;}
+    var cv=document.createElement('canvas');cv.width=w;cv.height=h;
+    cv.getContext('2d').drawImage(img,0,0,w,h);
+    URL.revokeObjectURL(url);
+    cb(cv.toDataURL('image/jpeg',0.82).split(',')[1]);
+  };
+  img.onerror=function(){URL.revokeObjectURL(url);};
+  img.src=url;
+}
+
+document.getElementById('fileInput').onchange=function(e){
+  var files=Array.prototype.slice.call(e.target.files||[]);
+  files.forEach(function(f){
+    resizeImage(f,1400,function(b64){ newImages.push({name:f.name,data:b64}); renderGallery(); });
+  });
+  e.target.value='';
+};
+
+function collect(){
+  document.querySelectorAll('input[id],textarea[id]').forEach(function(el){
+    if(el.id.indexOf('.')<0) return;
+    sp(data,el.id,el.value);
+  });
+}
+
+document.getElementById('saveBtn').onclick=function(){
+  var pw=document.getElementById('pw').value;
+  if(!pw){ showMsg('Įveskite slaptažodį.','err'); return; }
+  collect();
+  var btn=this; btn.disabled=true; btn.textContent='Saugoma...';
+  fetch('/api/save',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({password:pw,content:data,newImages:newImages})})
+    .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+    .then(function(res){
+      btn.disabled=false; btn.textContent='Išsaugoti';
+      if(res.ok && res.j.ok){ newImages=[]; showMsg('Išsaugota! Pakeitimai svetainėje pasirodys per ~1 minutę.','ok'); setTimeout(load,1500); }
+      else { showMsg('Klaida: '+(res.j.error||'nepavyko išsaugoti'),'err'); }
+    })
+    .catch(function(err){ btn.disabled=false; btn.textContent='Išsaugoti'; showMsg('Tinklo klaida: '+err,'err'); });
+};
+
+function load(){
+  fetch(RAW+'?v='+Date.now()).then(function(r){if(!r.ok)throw 0;return r.json();})
+    .catch(function(){return fetch('/content.json?v='+Date.now()).then(function(r){return r.json();});})
+    .then(function(c){ data=c||{}; newImages=[]; fillForm(); })
+    .catch(function(){ showMsg('Nepavyko įkelti turinio.','err'); });
+}
+load();
+</script>
+</body>
+</html>
