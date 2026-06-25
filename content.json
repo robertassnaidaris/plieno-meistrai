@@ -2,7 +2,7 @@
   "business": {
     "name": "Plieno Meistrai",
     "tagline": "Metalo dirbiniai",
-    "phone": "+370 600 00000",
+    "phone": "+370 611 11111",
     "email": "info@plieno-meistrai.lt",
     "address": "Pramonės g. 00, Vilnius",
     "hours": "I–V 8:00–17:00"
@@ -13,9 +13,12 @@
     "title2": "kurie tarnauja",
     "title3": "dešimtmečius.",
     "lead": "Projektuojame, gaminame ir montuojame metalines tvoras, turėklus, vartus ir laiptus pagal individualų užsakymą. Tikslus darbas, tvirtos jungtys, ilgaamžis dažymas.",
-    "stat1num": "12+", "stat1label": "metų patirties",
-    "stat2num": "480+", "stat2label": "įgyvendintų projektų",
-    "stat3num": "5 m.", "stat3label": "garantija dažymui"
+    "stat1num": "12+",
+    "stat1label": "metų patirties",
+    "stat2num": "480+",
+    "stat2label": "įgyvendintų projektų",
+    "stat3num": "5 m.",
+    "stat3label": "garantija dažymui"
   },
   "about": {
     "heading": "Dirbtuvė, kurioje metalą pažįsta iš arti",
@@ -23,11 +26,29 @@
     "p2": "Nesivaikome kiekio — vaikomės tvirtumo. Naudojame sertifikuotą metalą, kokybiškas jungtis ir miltelinį dažymą, kuris nesilupa po pirmos žiemos."
   },
   "gallery": [
-    {"img": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80", "caption": "Kiemo tvora · Vilnius"},
-    {"img": "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=900&q=80", "caption": "Laiptų turėklai · Kaunas"},
-    {"img": "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=700&q=80", "caption": "Suvirinimo darbai"},
-    {"img": "https://images.unsplash.com/photo-1605152276897-4f618f831968?w=700&q=80", "caption": "Vartų rėmas"},
-    {"img": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=900&q=80", "caption": "Segmentinė tvora · Trakai"},
-    {"img": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=700&q=80", "caption": "Balkono turėklai"}
+    {
+      "img": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80",
+      "caption": "Kiemo tvora · Vilnius"
+    },
+    {
+      "img": "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=900&q=80",
+      "caption": "Laiptų turėklai · Kaunas"
+    },
+    {
+      "img": "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=700&q=80",
+      "caption": "Suvirinimo darbai"
+    },
+    {
+      "img": "https://images.unsplash.com/photo-1605152276897-4f618f831968?w=700&q=80",
+      "caption": "Vartų rėmas"
+    },
+    {
+      "img": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=900&q=80",
+      "caption": "Segmentinė tvora · Trakai"
+    },
+    {
+      "img": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=700&q=80",
+      "caption": "Balkono turėklai"
+    }
   ]
 }
